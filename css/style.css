@@ -1,0 +1,211 @@
+body {
+    background: rgba(220, 223, 230, 1);
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+.col {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+    width: 1280px;
+    margin-left: 228px;
+   
+}
+
+.flex-grow {
+    flex-grow: 0;
+}
+
+#main {
+    width: 1280px;
+    
+    background: rgba(255, 255, 255, 1);
+    margin: auto;
+}
+
+#head {
+    width: 1280px;
+    height: 110px;
+}
+
+.logo {
+    margin: 20px 0 0 20px;
+}
+
+#nav {
+    width: 1280px;
+    height: 130px;
+    background: linear-gradient(to right, #8BC1EF, #82D6D6);
+    color: #FFFFFF;
+}
+#content{
+    width: 1280px;
+    margin-left: 228px;
+    margin-top: 55px;
+}
+#navstep{
+    width: 820px;
+    height: 54px;
+    background: #F5F7FA;
+    border-radius: 4px;
+    position: absolute;
+    left: 325px;
+    top:80px;
+}
+.stepbox{
+    /* 甚麼時候用margin 甚麼時候用定位 */
+    margin-left:73px; 
+}
+.navbox{
+    position: relative;
+    left: 216px;
+   top:30px;
+}
+.navtitle{
+    font-size: 36px;
+}
+.navnumber{
+    font-size: 15px;
+    
+}
+.moneybox{
+    position: absolute;
+    left: 390px;
+    bottom: 35%;
+}
+.cbox {
+    width: 400px;
+    height: 120px;
+    background: #F5F7FA;
+    border: 1px solid #4BC9C9;
+    border-radius: 4px;
+    position: relative;
+    margin: 20px 25px 0px 10px;
+    display: flex;
+}
+
+.cboxok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+.cboximg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.ctitle {
+    align-items: center;
+    justify-content: center;
+    margin-left: 28px;
+    position: relative;
+    top: 39px;
+    color: #606266;
+    font-size: 15px;
+    height: 50px;
+}
+
+.ctext {
+    margin-left: 28px;
+    height: 50px;
+    color: #909399;
+    position: relative;
+    top: 15px;
+    white-space:pre-wrap; 
+}
+
+.cbox_un {
+    border: 1px solid #DCDFE6;
+    width: 400px;
+    height: 120px;
+    border-radius: 4px;
+    position: relative;
+    margin: 20px 25px 0px 10px;
+    display: flex;
+}
+
+.cbox:focus {
+    width: 400px;
+    height: 120px;
+    background: rgb(25, 55, 100);
+    border: 1px solid rgb(98, 75, 201);
+    border-radius: 4px;
+    position: relative;
+    margin: 20px 25px 0px 10px;
+    display: flex;
+}
+
+.cbox:active {
+    width: 400px;
+    height: 120px;
+    background: rgb(25, 55, 100);
+    border: 1px solid rgb(98, 75, 201);
+    border-radius: 4px;
+    position: relative;
+    margin: 20px 25px 0px 10px;
+    display: flex;
+}
+.buytext{
+    color: #909399;
+    font-size: 14px;
+    text-align: left;
+    margin-top:43px; 
+    
+
+}
+.buytext ul{
+    height: 149px;
+}
+.buttonback{
+    width: 155px;
+    height: 57px;
+    color: #5A5E66;
+    font-size: 20px;
+    text-align: center;
+    line-height: 57px;
+    border: 1px solid #DCDFE6;
+    border-radius: 4px;
+    
+}
+.buttonnext{
+    width: 155px;
+    height: 57px;
+    background: #4BC9C9;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+    line-height: 57px;
+    border: 1px solid #DCDFE6;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+.flex-row2 {
+    flex-direction: row;
+    width: 1280px;
+    margin-left: 723px;
+    padding-bottom: 30px;
+   
+}
