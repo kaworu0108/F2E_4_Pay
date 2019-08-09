@@ -9,44 +9,51 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.css">
     <title>Pay</title>
 </head>
 
 <body>
-    <div id="main">
+    <div id="main" class="border">
         <div id="head"><img src="img/logo.svg" alt="" class="logo"></div>
-        <div id="navstep">
-            <div class="stepbox">
-                <span><img src="img/icon_done.svg" alt=""></span>
-                <span>確認購物車</span>
-                <span><img src="img/icon_arrow.svg" alt=""></span>
-                <span><img src="img/step2.svg" alt=""></span>
-                <span>選擇配送付款方式</span>
-                <span><img src="img/icon_arrow.svg" alt=""></span>
-                <span><img src="img/step3.svg" alt=""></span>
-                <span>確認訂購</span></div>
-
-        </div>
-        <div id="nav">
-            <div class="navbox">
-                <div class="navtitle">訂單明細</div>
-                <div class="navnumber">(JC293016)</div>
-                <div class="moneybox">
-                    <span style="margin-right:10px ">商品小計</span>
-                    <span style="margin-right:54px ">NT$ 880</span>
-                    <span style="margin-right:10px ">運費</span>
-                    <span style="margin-right:62px ">NT$ 60</span>
-                    <span style="margin-right:15px ">總金額</span>
-                    <span style="font-size: 24px">NT$ 940</span>
+                <!-- 購買步驟 -->
+                <div class="container " style="background:#F5F7FA;height:57px">
+                    <div class="row align-items-center" style="width: 100%">
+                        <div class="col-4 text-center " style="color:#4BC9C9">
+                            <img src="img/icon_done.svg" class="mr-2">確認購物車<img src="img/icon_arrow.svg" class="float-right">
+                        </div>
+                        <div class="col-4 text-center" style="color:#4BC9C9">
+                            <img src="img/icon_done.svg" class="mr-2"> 選擇配送付款方式<img src="img/icon_arrow.svg"
+                                class="float-right"></div>
+                        <div class="col-4 text-center" style="color:#4BC9C9">
+                            <img src="img/icon_done.svg" class="mr-2">確認訂購
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-
-
-        </div>
+                <!-- 訂單明細有漸層色那邊 -->
+                <div class="container-fluid">
+                    <div class="row align-items-center w-100" style="height:130px;background: linear-gradient(to right, #8BC1EF, #82D6D6);">
+            
+                        <div class="col-1"></div>
+            
+                        <div class="col-4 text-white" style="font-size:36px">訂單明細<span style="font-size: 15px" class="d-block">(JC293016)</span></div>
+                        <div class="col-1"></div>
+            
+                        <div class="col-2 text-white">商品小計 <span>NT$ 880</span></div>
+            
+                        <div class="col-2 text-white">運費
+                            <sapn>NT$ 60</sapn>
+                        </div>
+            
+                        <div class="col-2 text-white">總金額 <span class="h3">NT$ 940</span></div>
+            
+                    </div>
+                </div>
+                <!-- 付款方式 -->
         <div id="container d-flex content" style=" margin-top: 55px;">
             <div class="d-flex flex-row">
-                <div class="cbox" id="cbox">
+                <div class="cbox" id="cbox1">
                     <img src="img/Group 40.svg" alt="1" class="cboxok">
                     <img src="img/icon_store.svg" alt="超商取貨" class="cboximg">
                     <div>
@@ -55,7 +62,7 @@
                     </div>
                 </div>
 
-                <div class="cbox_un">
+                <div class="cbox_un" id="cbox2">
                     <img src="img/Ellipse.svg" alt="2" class="cboxok">
                     <img src="img/icon_card.svg" alt="信用卡" class="cboximg">
                     <div>
@@ -66,7 +73,7 @@
             </div>
             <!--  -->
             <div class="d-flex flex-row">
-                <div class="cbox_un">
+                <div class="cbox_un" id="cbox3">
                     <img src="img/Ellipse.svg" alt="3" class="cboxok">
                     <img src="img/line_pay.svg" alt="LINE Pay" class="cboximg">
                     <div>
@@ -74,18 +81,18 @@
                         <div class="ctext">使用line point折抵消費</div>
                     </div>
                 </div>
-                <div class="cbox_un">
+                <div class="cbox_un" id="cbox4">
                     <img src="img/Ellipse.svg" alt="4" class="cboxok">
                     <img src="img/unionpay.png" style="width: 65px;height: 41px;position:relative;top:35%;" alt="銀聯卡" class="cboximg">
                     <div>
-                        <div class="ctitle">銀聯卡 付款</div>
-                        <div class="ctext">支付成功頁面僅為銀聯卡回覆訊息，交易是否完成請需以本商店通知為準</div>
+                        <div class="ctitle" style="position: relative;top:20px;height: 40px; ">銀聯卡 付款</div>
+                        <div class="ctext" style="position: relative;top:5px;margin-right: 5px;">支付成功頁面僅為銀聯卡回覆訊息，交易是否完成請需以本商店通知為準</div>
                     </div>
                 </div>
             </div>
             <!--  -->
             <div class="d-flex flex-row">
-                <div class="cbox_un">
+                <div class="cbox_un" id="cbox5">
                     <img src="img/Ellipse.svg" alt="5" class="cboxok">
                     <img src="img/icon_atm.svg" alt="Web ATM" class="cboximg">
                     <div>
@@ -94,7 +101,7 @@
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-row buytext">
+            <div class="flex-row buytext">
                 <ul>
                     <li>請確認您填寫的資料是否正確，一旦訂單完成後，付款與物流方式皆無法修改。</li>
                     <li>使用ATM轉帳，將依據銀行入帳日，依序進行出貨/排貨。 </li>
@@ -104,7 +111,7 @@
                     <li>請確認您已詳閱並瞭解本站「購買說明」內容，訂單完成即表示您已同意其中的各項說明</li>
                     </ol>
             </div>
-            <div class="d-flex flex-row2">
+            <div class="d-flex flex-row2 ">
                 <div class="buttonback">上一步</div>
                 <div class="buttonnext">下一步</div>
                 <br><br>
@@ -113,7 +120,9 @@
         </div>
         <!-- main -->
     </div>
-
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

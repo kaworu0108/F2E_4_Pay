@@ -3,7 +3,6 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-
 .col {
     width: 100%;
 }
@@ -26,9 +25,7 @@ body {
 
 .flex-row {
     flex-direction: row;
-    width: 1280px;
     margin-left: 228px;
-   
 }
 
 .flex-grow {
@@ -37,9 +34,9 @@ body {
 
 #main {
     width: 1280px;
-    
     background: rgba(255, 255, 255, 1);
     margin: auto;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 #head {
@@ -57,41 +54,51 @@ body {
     background: linear-gradient(to right, #8BC1EF, #82D6D6);
     color: #FFFFFF;
 }
-#content{
+
+#content {
     width: 1280px;
     margin-left: 228px;
     margin-top: 55px;
 }
-#navstep{
+
+#navstep {
     width: 820px;
     height: 54px;
     background: #F5F7FA;
     border-radius: 4px;
     position: absolute;
-    left: 325px;
-    top:80px;
+    left: 500px;
+    top: 80px;
 }
-.stepbox{
+
+.stepbox {
     /* 甚麼時候用margin 甚麼時候用定位 */
-    margin-left:73px; 
+    margin-left: 73px;
 }
-.navbox{
+
+.navbox {
     position: relative;
     left: 216px;
-   top:30px;
+    top: 30px;
+    border-left: 3px solid #fff;
 }
-.navtitle{
+
+.navtitle {
     font-size: 36px;
+    margin-left: 10px;
 }
-.navnumber{
+
+.navnumber {
     font-size: 15px;
-    
+    margin-left: 10px;
 }
-.moneybox{
+
+.moneybox {
     position: absolute;
     left: 390px;
     bottom: 35%;
 }
+
 .cbox {
     width: 400px;
     height: 120px;
@@ -134,7 +141,8 @@ body {
     color: #909399;
     position: relative;
     top: 15px;
-    white-space:pre-wrap; 
+    white-space: pre-wrap;
+    font-size: 15px;
 }
 
 .cbox_un {
@@ -168,18 +176,22 @@ body {
     margin: 20px 25px 0px 10px;
     display: flex;
 }
-.buytext{
+
+.buytext {
     color: #909399;
     font-size: 14px;
     text-align: left;
-    margin-top:43px; 
-    
+    margin-top: 43px;
+}
 
-}
-.buytext ul{
+.buytext ul {
     height: 149px;
+    background: url("../img/icon_notice.svg");
+    background-repeat: no-repeat;
+    background-position: right;
 }
-.buttonback{
+
+.buttonback {
     width: 155px;
     height: 57px;
     color: #5A5E66;
@@ -188,9 +200,9 @@ body {
     line-height: 57px;
     border: 1px solid #DCDFE6;
     border-radius: 4px;
-    
 }
-.buttonnext{
+
+.buttonnext {
     width: 155px;
     height: 57px;
     background: #4BC9C9;
@@ -201,11 +213,110 @@ body {
     border: 1px solid #DCDFE6;
     border-radius: 4px;
     margin-left: 20px;
+    margin-right: 200px;
 }
+
 .flex-row2 {
-    flex-direction: row;
-    width: 1280px;
-    margin-left: 723px;
     padding-bottom: 30px;
-   
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.stepNocheck {
+    color: #909399;
+}
+
+.stepnow {
+    color: #303133;
+}
+
+.stepcheck {
+    color: #4BC9C9;
+}
+
+.buttonback:hover {
+    border: 1px solid #4BC9C9;
+}
+
+.buttonback:active {
+    background: #4BC9C9;
+    color: #FFF;
+}
+
+.buttonnext:hover {
+    background: #F5F7FA;
+    color: #4BC9C9;
+}
+
+.cboxShop {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    flex-direction: row;
+    margin-bottom: 45px;
+}
+
+.ctitleShop {
+    color: #606266;
+    font-size: 20px;
+    margin-left: 11px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+input,
+select {
+    height: 40px;
+    border: 1px solid #DCDFE6;
+    border-radius: 4px;
+}
+
+form span {
+    margin-right: 45px;
+}
+
+.Data-Content {
+    width: 100%;
+    /* 表單寬度 */
+    line-height: 40px;
+}
+
+.Data-Title {
+    float: left;
+    width: 25%;
+    /* Label寬度，視情況調整 */
+    margin-right: 20px;
+}
+
+.Data-Items {
+    float: left;
+    width: 25%;
+}
+
+.AlignRight {
+    text-align: left;
+}
+
+.shopOk {
+    color: #606266;
+    font-size: 36px;
+}
+
+::placeholder {
+    color: #909399 !important;
+}
+.color606266{
+color:#606266;
+}
+.color4BC9C9{
+    color:#4BC9C9;
+}
+.color909399{
+color:#909399;
+}
+.t12{
+    font-size: 12px;
 }
