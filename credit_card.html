@@ -65,52 +65,49 @@
             27px;vertical-align:top;">
         <img src="img/card_2.png" class="border" style="width: 34px;height: 24px;vertical-align:top;">
         <img src="img/card_3.png" class="border" style="width: 34px;height: 24px;;vertical-align:top;"> -->
-        <form>
-            <div class="form-group row">
-                <!-- 1 -->
-                <label for="inputEmail3" class="col-sm-1 col-form-label color606266">信用卡號</label>
-                <div class="col-sm-4">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="請填寫真實姓名">
-                </div>
-                <!--2-->
-                <label for="inputEmail3" class="col-sm-1 col-form-label color606266">手機</label>
-                <!-- 下拉選單 -->
-                <div class="dropdown">
-                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">國際區碼</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">+886</a>
-                        <a class="dropdown-item" href="#">+81</a>
-                        <a class="dropdown-item" href="#">+852</a>
+            <form>
+                <div class="form-group row">
+                    <!-- 1 -->
+                    <label for="inputEmail3" class="col-sm-1 col-form-label color606266">信用卡號</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="請填寫真實姓名">
+                    </div>
+                    <!--2-->
+                    <label for="inputEmail3" class="col-sm-1 col-form-label color606266">手機</label>
+                    <!-- 下拉選單 -->
+                    <select class="custom-select col-1 mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>886</option>
+                            <option value="1">852</option>
+                            <option value="2">81</option>
+    
+                        </select>
+                    <!-- 手機號碼輸入 -->
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="例：0912-345-678">
                     </div>
                 </div>
-                <!-- 手機號碼輸入 -->
-                <div class="col-sm-4">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="例：0912-345-678">
+                <!-- 地址 -->
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-1 col-form-label color606266">地址</label>
+                    <!-- input -->
+                    <div class="col-sm-2">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="郵遞區號">
+                    </div>
+                    <div class="col-sm-8">
+                        <input type="password" class="form-control" id="inputPassword3"
+                            placeholder="例：新北市信義區復興路999段99號1巷8樓">
+                    </div>
                 </div>
-            </div>
-            <!-- 地址 -->
-            <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-1 col-form-label color606266">地址</label>
-                <!-- input -->
-                <div class="col-sm-2">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="郵遞區號">
-                </div>
-                <div class="col-sm-8">
-                    <input type="password" class="form-control" id="inputPassword3"
-                        placeholder="例：新北市信義區復興路999段99號1巷8樓">
-                </div>
-            </div>
-            <!-- email -->
-            <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-1 col-form-label color606266">Email</label>
-                <!-- input -->
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword3" placeholder="">
-                </div>
+                <!-- email -->
+                <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-1 col-form-label color606266">Email</label>
+                    <!-- input -->
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="">
+                    </div>
 
-            </div>
-        </form>
+                </div>
+            </form>
             <!-- 訂購人表單內容 -->
             <P style="margin-top: 47px;" class="font-weight-bold">填寫訂購人資訊</P>
             <form>
@@ -123,15 +120,12 @@
                     <!--2-->
                     <label for="inputEmail3" class="col-sm-1 col-form-label color606266">手機</label>
                     <!-- 下拉選單 -->
-                    <div class="dropdown">
-                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">國際區碼</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">+886</a>
-                            <a class="dropdown-item" href="#">+81</a>
-                            <a class="dropdown-item" href="#">+852</a>
-                        </div>
-                    </div>
+                    <select class="custom-select col-1 mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>886</option>
+                            <option value="1">852</option>
+                            <option value="2">81</option>
+    
+                        </select>
                     <!-- 手機號碼輸入 -->
                     <div class="col-sm-4">
                         <input type="email" class="form-control" id="inputEmail3" placeholder="例：0912-345-678">
@@ -178,15 +172,12 @@
                     <!--2-->
                     <label for="inputEmail3" class="col-sm-1 col-form-label color606266">手機</label>
                     <!-- 下拉選單 -->
-                    <div class="dropdown">
-                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">國際區碼</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">+886</a>
-                            <a class="dropdown-item" href="#">+81</a>
-                            <a class="dropdown-item" href="#">+852</a>
-                        </div>
-                    </div>
+                    <select class="custom-select col-1 mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>886</option>
+                            <option value="1">852</option>
+                            <option value="2">81</option>
+    
+                        </select>
                     <!-- 手機號碼輸入 -->
                     <div class="col-sm-4">
                         <input type="email" class="form-control" id="inputEmail3" placeholder="例：0912-345-678">
@@ -226,8 +217,8 @@
             </div>
             <!-- button -->
             <div class="d-flex flex-row2 " style="clear: both">
-                <div class="buttonback">上一步</div>
-                <div class="buttonnext">下一步</div>
+                <div class="buttonback" id="back" onclick="backH()">上一步</div>
+                <div class="buttonnext" id="next" onclick="nextp()">下一步</div>
                 <br><br>
             </div>
             <!-- content -->
@@ -242,7 +233,14 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        document.g
+        var next = document.getElementById('buttonnext');
+        function nextp() {
+            document.location.href = "buyok.html";
+        }
+        var back = document.getElementById('back');
+        function backH() {
+            document.location.href = "index.html";
+        }
     </script>
 
 </body>

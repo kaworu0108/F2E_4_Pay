@@ -134,7 +134,7 @@
         <!-- button -->
         <div class="d-flex flex-row2 " style="clear: both">
             <div class="buttonback">會員專區</div>
-            <div class="buttonnext">返回首頁</div>
+            <div class="buttonnext" id="back" onclick="backH()">返回首頁</div>
             <br><br>
         </div>
         <!-- main -->
@@ -144,6 +144,12 @@
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+            var back = document.getElementById('back');
+        function backH(){
+            document.location.href = "index.html";
+        }
+    </script>
 </body>
 
 </html>

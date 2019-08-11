@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>超商取貨 付款</title>
+    <title>LINE Pay 付款</title>
 </head>
 
 <body>
@@ -33,31 +33,37 @@
         </div>
         <!-- 訂單明細有漸層色那邊 -->
         <div class="container-fluid">
-            <div class="row align-items-center w-100" style="height:130px;background: linear-gradient(to right, #8BC1EF, #82D6D6);">
-    
+            <div class="row align-items-center w-100"
+                style="height:130px;background: linear-gradient(to right, #8BC1EF, #82D6D6);">
+
                 <div class="col-1"></div>
-    
-                <div class="col-4 text-white" style="font-size:36px">訂單明細<span style="font-size: 15px" class="d-block">(JC293016)</span></div>
+
+                <div class="col-4 text-white" style="font-size:36px">訂單明細<span style="font-size: 15px"
+                        class="d-block">(JC293016)</span></div>
                 <div class="col-1"></div>
-    
+
                 <div class="col-2 text-white">商品小計 <span>NT$ 880</span></div>
-    
+
                 <div class="col-2 text-white">運費
                     <sapn>NT$ 60</sapn>
                 </div>
-    
+
                 <div class="col-2 text-white">總金額 <span class="h3">NT$ 940</span></div>
-    
+
             </div>
         </div>
         <!-- 訂單內容 -->
         <div class="content">
-            <div class="cboxShop">
-                <img src="img/line_pay.svg" style="width: 64px;height: 18px;">
-                <div class="ctitleShop">LINE Pay 付款</div><br>
-                <div class="color909399 t12">將於下一步跳轉至LINE Pay進行付款</div>
+            <div class="container mt-5">
+                <div class="row ">
+                    <div class="col"><img src="img/line_pay.svg" style="width: 64px;height: 18px;">
+                        <span class="ctitleShop">LINE Pay 付款</span></div>
+                    <div class="w-100"></div>
+                    <div class="col color909399 t12">將於下一步跳轉至LINE Pay進行付款</div>
+                </div>
             </div>
-            
+
+
             <!-- 訂購人表單內容 -->
             <P style="margin-top: 47px;" class="font-weight-bold">填寫訂購人資訊</P>
             <form>
@@ -70,15 +76,12 @@
                     <!--2-->
                     <label for="inputEmail3" class="col-sm-1 col-form-label color606266">手機</label>
                     <!-- 下拉選單 -->
-                    <div class="dropdown">
-                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">國際區碼</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">+886</a>
-                            <a class="dropdown-item" href="#">+81</a>
-                            <a class="dropdown-item" href="#">+852</a>
-                        </div>
-                    </div>
+                    <select class="custom-select col-1 mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>886</option>
+                            <option value="1">852</option>
+                            <option value="2">81</option>
+    
+                        </select>
                     <!-- 手機號碼輸入 -->
                     <div class="col-sm-4">
                         <input type="email" class="form-control" id="inputEmail3" placeholder="例：0912-345-678">
@@ -114,7 +117,7 @@
                     <div class="custom-control custom-radio d-inlie-block">
                         <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
                         <label class="custom-control-label" for="customRadio1">同訂購人資料</label>
-                      </div>
+                    </div>
                 </div>
                 <!-- 1 -->
                 <div class="form-group row">
@@ -125,15 +128,12 @@
                     <!--2-->
                     <label for="inputEmail3" class="col-sm-1 col-form-label color606266">手機</label>
                     <!-- 下拉選單 -->
-                    <div class="dropdown">
-                        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">國際區碼</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">+886</a>
-                            <a class="dropdown-item" href="#">+81</a>
-                            <a class="dropdown-item" href="#">+852</a>
-                        </div>
-                    </div>
+                    <select class="custom-select col-1 mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>886</option>
+                            <option value="1">852</option>
+                            <option value="2">81</option>
+    
+                        </select>
                     <!-- 手機號碼輸入 -->
                     <div class="col-sm-4">
                         <input type="email" class="form-control" id="inputEmail3" placeholder="例：0912-345-678">
@@ -173,8 +173,8 @@
             </div>
             <!-- button -->
             <div class="d-flex flex-row2 " style="clear: both">
-                <div class="buttonback">上一步</div>
-                <div class="buttonnext">下一步</div>
+                <div class="buttonback" id="back" onclick="backH()">上一步</div>
+                <div class="buttonnext" id="next" onclick="nextp()">下一步</div>
                 <br><br>
             </div>
             <!-- content -->
@@ -189,8 +189,15 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        document.g
-    </script>
+            var next = document.getElementById('buttonnext');
+            function nextp() {
+                document.location.href = "buyok.html";
+            }
+            var back = document.getElementById('back');
+            function backH() {
+                document.location.href = "index.html";
+            }
+        </script>
 
 </body>
 

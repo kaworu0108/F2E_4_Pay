@@ -155,16 +155,7 @@ body {
     display: flex;
 }
 
-.cbox:focus {
-    width: 400px;
-    height: 120px;
-    background: rgb(25, 55, 100);
-    border: 1px solid rgb(98, 75, 201);
-    border-radius: 4px;
-    position: relative;
-    margin: 20px 25px 0px 10px;
-    display: flex;
-}
+
 
 .cbox:active {
     width: 400px;
